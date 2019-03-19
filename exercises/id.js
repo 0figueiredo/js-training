@@ -5,7 +5,9 @@
  *
  * @notions Functions
  */
-
+function id (n){
+    return n
+}
 // Your code :
 
 //* Begin of tests
