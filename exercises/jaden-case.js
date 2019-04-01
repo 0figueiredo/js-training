@@ -10,10 +10,18 @@
  *
  */
 
-
-
-//* Begin of tests
-const assert = require('assert')
-
-assert.fail('You must write your own tests')
+function jadenCase(str) {
+    let words = str.split(' ');
+    for (let i = 0; i < words.length; i++) {
+      words[i] = words[i].charAt(0).toUpperCase() + words[i].substr(1);
+    }
+    return words.join(' ').trim();
+  };
+  
+  
+  //* Begin of tests
+  const assert = require("assert");
+  
+  assert.strictEqual(jadenCase("str test"), "Str Test");
+  assert.strictEqual(jadenCase("mort de rire"), "Mort De Rire");
 // End of tests */
